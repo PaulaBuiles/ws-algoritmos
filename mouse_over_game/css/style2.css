@@ -2,18 +2,21 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
+    
 }
-
+h1{
+    background-color: rgb(255, 177, 148);
+}
 .container {
     padding: 0px;
     margin: auto;
-    width: 700px;
-    height: 700px;
-    background-color: antiquewhite;
-    border: 5px dashed #aa4;
+    width: 800px;
+    height: 800px;
+    background-color: coral;
+    border: 5px dashed silver;
 }
 #player{
-    background-color: blueviolet;
+    background-color: rgb(43, 183, 226);
     border:4px;
     width: 40px;
     height: 40px;
@@ -22,11 +25,11 @@
     transition: all 0.3s;
 }
 .pointer{
-    background-color: dimgrey;
+    background-color: rgb(124, 77, 224);
     height: 50px;
     margin-top: 30px;
     border-bottom: 0px;
-    color: #fff;
+    color: rgb(255, 178, 178);
     font-size: 20px;
     text-align: center;
     padding: 10px 0px;
