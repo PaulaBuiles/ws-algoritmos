@@ -1,0 +1,91 @@
+.contenedor{
+    height: 480px;
+    width: 1845px;
+    border: black solid 3px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.titulo{
+    height: 100px;
+    font-weight: 1225px;
+    border: black solid 3px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: beige;
+    
+}
+
+.title{
+    font-size: xx-large;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+
+}
+
+.caja1{
+    height: 470px;
+    width: 301px;
+    float: left;
+    border: solid 3px beige;
+    border-radius: 10px;
+}
+
+.cajaimg{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.dispo{
+    font-size: large;
+    font-family: fantasy;
+    text-align: center;
+    color: black;
+}
+
+.cajacompra{
+    width: 200px;
+    height: 30px;
+    font-family: fantasy;
+    border-radius: 10px;
+    border: black 3px solid;
+    text-align: center;
+}
+
+.boton1{
+    background-image: url(../img/add-to-cart.png);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: black 3px solid;
+}
+
+.boton1:hover{
+    animation: pulsar 1s ease-in-out;
+}
+
+
+.boton2{
+    background: black;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: fantasy;
+}
+
+.boton2:hover{
+    animation: pulsar 1s ease-in-out;
+}
+
+@keyframes pulsar {
+    0%{
+        box-shadow: 0 0 45px white, 0 0 50px white;
+    }
+}

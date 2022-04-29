@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>tienda</title>
+  </head>
+  <body>
+    <div class="titulo">
+        <p class="title">SUPER MERCADO</p>
+    </div>
+
+    <div class="contenedor">
+
+      <div class="caja1">
+        <img src="img/Sale fashion Banner.png" alt="BONO" class="cajaimg" />
+
+      </div>
+
+      <div class="caja1">
+        <img src="img/huevos.png" alt="caja_huevos" class="cajaimg" />
+        <p class="dispo">Disponibilidad <span>30</span></p>
+        <p class="dispo" name="precio"><span>$</span>15.000 c/u</p>
+        <input
+          class="cajacompra"
+          type="text"
+          name="cantH"
+          placeholder="ingrese la cantidad deseada"
+        />
+        <button class="boton1" onclick="addH()"></button>
+      </div>
+
+      <div class="caja1">
+        <img src="img/leche.png" alt="caja_leche" class="cajaimg">
+        <p class="dispo">Disponibilidad <span>20</span></p>
+        <p class="dispo" name="precio"><span>$</span>3.500</p>
+        <input  
+          class="cajacompra" 
+          type="text" 
+          name="cantL" 
+          placeholder="ingrese la cantidad deseada"
+        />
+        <button class="boton1" onclick="addL()" ></button>
+      </div>
+
+      <div class="caja1">
+        <img src="img/pan.png" alt="pan" class="cajaimg" />
+        <p class="dispo">Disponibilidad <span>50</span></p>
+        <p class="dispo" name="precio"><span>$</span>2.000</p>
+        <input
+          class="cajacompra"
+          type="text"
+          name="cantP"
+          placeholder="ingrese la cantidad deseada"
+        />
+        <button class="boton1" onclick="addP()" ></button>
+      </div>
+
+      <div class="caja1">
+        <img src="img/frutamix.png" alt="fruta_mix" class="cajaimg">
+        <p class="dispo">Disponibilidad <span>50</span></p>
+        <p class="dispo" name="precio"><span>$</span>5.000</p>
+        <input  
+          class="cajacompra" 
+          type="text" 
+          name="cantF" 
+          placeholder="ingrese la cantidad deseada"
+        />
+        <button class="boton1" onclick="addF()"></button>
+      </div>
+
+      <div class="caja1"></div>
+    </div>
+
+    <div class="titulo">
+      <button  class="boton2" onclick="pagar()">PAGAR</button>
+      <button class="boton2" onclick="reload()">VACIAR CARRITO</button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
