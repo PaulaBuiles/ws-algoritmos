@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./CSS/styles.css" rel="stylesheet" >
+  <title>Taller punto 3</title>
+</head>
+<body onload="cambiarColores()";>
+    <h1>Bienvenidos</h1>
+    <h2 id="color">Punto1</h2>
+    <a id="link"> javaTpoint.com </a>
+    <p> Haga clic en el siguiente botón para ver el efecto.</p>  
+    <button onclick="fun()"> Agregar atributo </button> 
+    <button onclick="cambiarColor('pink');">Pink</button>
+    <p>HOLA</p>
+
+    <div id="Div" style="position:absolute;left: 500px;">Esto es un elemento de div</div>
+    <button onclick="funcionDiv()">cual es la posicion de izquierda de div</button>
+   
+    
+    
+    
+    <div id = "div" style = "background-color: pink; font-size: 25px; color: black; border: 2px solid purple;"> Este es mi elemento </div>
+    <button onclick = "fun2()"> Da click en mi </button>
+    <p id="p"></p>
+    <button id="miBoton" onclick="fun3()">Pruebame</button>
+    <p>Temporizadores</p>
+    <button onclick="mostrarAlerta();">Mostrar</button>
+    <button onclick="cancelarAlerta();">Cancelar</button>
+    <div id="mensaje">
+      <p>Hola a todos</p>
+    </div>
+    <button onclick="pararCambioDeColor();">Detener el cambio de color</button>
+    <button onclick="scroll()" style="position:fixed">CLICK AQUI</button><br><br>
+    <button onclick="Fun4()">Intenta dar click en mi</button>
+<script src="./JS/metodos.js"></script>
+</body>
+</html>
