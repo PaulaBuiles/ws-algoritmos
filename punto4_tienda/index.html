@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="JS/CSS/style.css" rel="stylesheet">
     <title>punto 4</title>
 </head>
 <body>
@@ -12,10 +12,66 @@
     <div class="titulo">
         <h1>Bienvenido a mi tienda</h1>
     </div>
-
     <div class="descuento">
         <p>Estas de suerte, hoy estamos regalando bonos</p>
-        <button onclick="descuento()">¡¡Clic aqui!!</button>
+        <button class="desc" onclick="descuento()">¡¡Clic aquí!!</button>
+    </div>
+
+    <div class="contenedor1">
+        <div style="position:relative;left: 330px;" class="compra">
+            <img src="https://www.cocinayvino.com/wp-content/uploads/2020/08/www.cocinayvino.com-los-huevos-son-una-valiosa-fuente-de-nutrientes-huevos1-e1596657281247-1200x900.jpg" alt="Huevos a la venta" height="200px">
+            <p class="Unidades">Unidades disponibles 30</p>
+            <p class="Unidades">$ 15.000 c/u</p>
+            <input 
+              class="cantidad"
+              type="text"
+              name="huevos"
+              placeholder="Ingrese su cantidad"
+            />
+            <button onclick="huevos()" class="boton1"></button>
+        </div>
+        <div class="compra">
+            <br>
+            <img src="https://img.freepik.com/psd-gratis/maqueta-caja-envasado-leche_439185-107.jpg?w=2000" alt="cajas de leche" height="200px">
+            <p class="Unidades">Unidades disponibles 20</p>
+            <p class="Unidades">$ 3.500 c/u</p>
+            <input 
+              class="cantidad"
+              type="text"
+              name="leche"
+              placeholder="Ingrese su cantidad"
+            />
+            <button onclick="leche()" class="boton1"></button>
+        </div>
+        <div style="position:relative;left: 330px;" class="compra">
+            <img src="https://okdiario.com/img/2022/02/14/por-que-el-pan-se-pone-duro.jpg" alt="cantidad de pan" height="180px">
+            <p class="Unidades">Unidades disponibles 50</p>
+            <p class="Unidades">$ 2.000 c/u</p>
+            <input 
+              class="cantidad"
+              type="text"
+              name="pan"
+              placeholder="Ingrese su cantidad" class="oblique"
+            />
+            <button onclick="pan()" class="boton1"></button>
+        </div>
+        <div class="compra">
+            <img src="https://www.lanacion.com.py/resizer/HFYltqmiEVTdHmS1Z7PHiBrLHFw=/fit-in/1000x800/smart/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/LDUOSSBE2BGRNCQ7RM6YCCCNXI.jpeg" alt="Frutas mix" height="200px">
+            <p class="Unidades">Unidades disponibles 50</p>
+            <p class="Unidades">$ 5.000 c/u</p>
+            <input 
+              class="cantidad"
+              type="text"
+              name="frutas"
+              placeholder="Ingrese su cantidad"
+            />
+            <button onclick="frutasM()" class="boton1"></button>
+        </div>
+        <div class="ultimo">
+            <br>
+            <button class="boton2" onclick="finCompra()">PAGUE AQUÍ</button>
+            <button class="boton2" onclick="vaciar()">VACIAR CANASTA</button>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,82 @@
+.contenedor1{
+    height: 1500px;
+    width: 700px;
+    border: black solid 3px;
+    margin: auto;
+    border-radius: 10px;
+    
+} 
+.titulo{
+    font-size: xx-large;
+    font-family:fantasy;
+    color: white;
+    text-align: center;
+
+} 
+.titulo:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.descuento{
+    font-size: large;
+    font-family: fantasy;
+    color: white;
+    text-align:center;
+}
+.desc{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: fantasy;
+}
+.desc:hover {
+    background-color: #008CBA;
+    color: white;
+}
+.caja1{
+    height: 470px;
+    width: 301px;
+    float: left;
+    border: solid 3px beige;
+    border-radius: 10px;
+}
+.boton1{
+    background-image: url(/carrito.jpg);
+    width: 40px;
+    height: 40px;
+    background-position:center;
+    background-color: white;
+    border-radius: 10px;
+    border: black 3px solid;
+}
+body {
+    background: url(/supermercado2.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.Unidades{
+    font-size: large;
+    font-family: fantasy;
+    color: white;
+}
+.boton2{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: fantasy;
+}
+.boton2:hover {
+    background-color: #008CBA;
+    color: white;
+}
