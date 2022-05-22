@@ -1,24 +1,34 @@
 
-let=cont=0;
-let==notaMasalta;
-let=estud;
 function llenarArreglo(){
     let alumnos=2;
-    for(let i = 0; i < alumnos; i++){
+    let cadena = "";
+    let i=0;
+    let arrEst=[i];
+    let arrNota=[i];
+    for( i = 0; i < alumnos; i++){
 
         let estudiantes= prompt("ingrese el nombre del estudiante");
-        let nota= prompt ("ingrese la nota del estudiante de 1.0 a 5.0");
+        arrEst[i] = estudiantes
 
-        let arr=[estudiantes,nota]
-        console.log(arr.length);
-        for(let estud1 of arreglo){
-            console.log (estud1);
-            if(nota==5.0){
-                
-                cont += nota;
-                notaMasalta=nota;
-                alert("la nota mas alta es "+notaMasalta+" los estudiantes con esta nota son ") 
-            }  
+        let nota= prompt ("ingrese la nota del estudiante de 1.0 a 5.0");
+        arrNota[i] = nota
+
+        cadena = cadena + `${arrEst}------${arrNota}<br>`
+    }
+    document.getElementById("contenedor").innerHTML = cadena
+    return alumnos, arrNota[i];
+}
+function nota_mas_alta(alumnos,arrNota){
+    let var1=0;
+    let cant=0;
+    let estud="";
+    for(let i=0;i<alumnos;i++){
+        if(var1<=arrNota[i]){
+            var1=arrNota[i];
+            cant += cant;
+            estud=estud+" - "+arrNota[i];
         }
     }
+    alert(`${var1} e la nota mas alta y la obtuvieron ${cant} estudiantes`);
 }
+
