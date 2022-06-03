@@ -4,77 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>practica1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ee2538311b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
-    <h1>Tienda</h1>
-    <div>
-        <label for="categoria">Categoria</label>
-        <select id="categoria" name="categoria" required>
-            <option value="">Ingrese la categoria</option>
-            <option value="Comida">Comida</option>
-            <option value="Tecnologia">Tecnologia</option>
-            <option value="Ropa">Ropa</option>
-        </select>
-    </div>
-    <div>
-        <label for="producto">Ingrese el producto:</label>
-        <input name="producto" id="producto" type="text" required>
-    </div>
-    <div>
-        <label for="precio">Ingrese el precio:</label>
-        <input name="precio" id="precio" type="text" required>
-    </div>
-    <div>
-        <label for="cantidad">Ingrese la cantidad:</label>
-        <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
-    </div>
-    </form>
-    <div>
-        <button onclick="mostrarProductos()">Enviar</button><br>
-    </div>
-    <button onclick="principio_lista()">Añadir al inicio</button>
-    <button onclick="final_lista()">Añadir al final</button>
-    <div>
-        <p><b>Buscar productos por categorias</b></p>
-        <button onclick="buscar_categoria()">Buscar categorias</button>
-    </div>
-    <div>
-        <p><b>Buscar productos: </b></p>
-        <label for="nombreProducto">Ingrese el nombre del producto que desea buscar</label>
-        <input name="nombreProducto" id="nombreProducto" type="text" required>
-        <button onclick="buscar_producto()">Buscar</button>
-        <div id="mostrar"></div>
-    </div>
-    <div>
-        <p><b>Para conocer el valor total de productos</b></p>
-        <button onclick="valor_total()">Click aqui</button>
-    </div>
-    <div>
-        <p><b>Para conocer la cantidad total de productos</b></p>
-        <button onclick="total_produc()">Click aqui</button>
-    </div>
-    <div>
-        <p><b>Disminuir existencias</b></p>
-        <input id="disminuir2" type="text" placeholder="Nombre del producto">
-        <input id="disminuir3" type="text" placeholder="Cantidad">
-        <button onclick="disminuir()">Enviar acá</button>
+    <nav id="navbar">
+        <div class="myicono"><i class="fa-solid fa-bars"></i></div>
+        <ul class="lista-sm">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="HTML/servicios.html">Servicios</a></li>
+            <li><a href="HTML/acercade.html">Acerca de</a></li>
+            <li><a href="HTML/contacto.html">Contacto</a></li>   
+        </ul>
+   
+    </nav>
+    <div id="contenedor">
+        <header >
+            <h1>Bienvenido a tienda Paula's</h1>
+            <small>Toda la informacion sobre tu tienda está aquí</small> 
+        </header>
+        <section id="principal">
+            <h2>Seccion 1</h2>
+            <div>
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Ingrese la categoria</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Ropa">Ropa</option>
+                </select>
+            </div>
+            <div>
+                <label for="producto">Ingrese el producto:</label>
+                <input name="producto" id="producto" type="text" required>
+            </div>
+            <div>
+                <label for="precio">Ingrese el precio:</label>
+                <input name="precio" id="precio" type="text" required>
+            </div>
+            <div>
+                <label for="cantidad">Ingrese la cantidad:</label>
+                <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+            </div><br>
+            <div>
+                <button onclick="mostrarProductos()">Enviar</button><br>
+            </div>
+            <button onclick="principio_lista()">Añadir producto al inicio</button><br>
+            <button onclick="final_lista()">Añadir producto al final</button><br>
+            <div>
+                <br>
+                <a><img src="https://serviciosreunidos.es/wp-content/uploads/PerfectStore.jpg"></a>
+            </div>
+        </section>
+        <section id="secundario">
+            <h2>Seccion 2</h2>
+            <div>
+                <p><b>Buscar productos por categorias</b></p>
+                <button onclick="buscar_categoria()">Buscar categorias</button>
+            </div>
+            <div>
+                <p><b>Buscar productos: </b></p>
+                <label for="nombreProducto">Ingrese el nombre del producto que desea buscar</label>
+                <input name="nombreProducto" id="nombreProducto" type="text" required>
+                <button onclick="buscar_producto()">Buscar</button>
+                <div id="mostrar"></div>
+            </div>
+            <div>
+                <p><b>Para conocer el valor total de productos</b></p>
+                <button onclick="valor_total()">Click aqui</button>
+            </div>
+            <div>
+                <p><b>Para conocer la cantidad total de productos</b></p>
+                <button onclick="total_produc()">Click aquí</button>
+            </div>
+            <div>
+                <p><b>Disminuir existencias</b></p>
+                <button onclick="disminuir()">Click acá</button>
+        
+            </div>
+            <div>
+                <p><b>aumentar existencias</b></p>
+                <button onclick="aumentar()">Click acá</button>
+        
+            </div>
+            <div>
+            <p><b>Para organizar los productos por orden orden alfabetico</b></p>
+            <button onclick="orden_alfabetico()">Click aquí</button>
+            </div>
+            <p><b>Para eliminar un elemento</b></p>
+            <button onclick="eliminar_elemento()">Click aquí</button>
+        </section>
+        <aside>
+            <h2>Sidebar</h2>
+            <a><img src="https://www.sb-tec.com/wp-content/uploads/comprando.jpg" sizes="350px, 200px"></a>
+            <h2>Otras funciones</h2>
+            <p><b>Click para buscar categoria</b></p>
+            <button onclick="cat()">Click aqui</button>
 
+            <p><b>Click para sumar todos los valores</b></p>
+            <button onclick="suma_reduce()">Click aqui</button>
+        </aside>
+        <footer>
+            <p align="center">Copyrigth (c) 2017 </p>
+        </footer>
     </div>
-    <div>
-        <p><b>aumentar existencias</b></p>
-        <input id="aumentar2" type="text" placeholder="Nombre del producto">
-        <input id="aumentar3" type="text" placeholder="Cantidad">
-        <button onclick="disminuir()">Enviar acá</button>
-
-    </div>
-    <div>
-    <p><b>Para organizar los productos por orden orden alfabetico</b></p>
-    <button onclick="orden_alfabetico()">Click aqui</button>
-    </div>
-    <p><b>Para eliminar el elemento recien añadido</b></p>
-    <button onclick="eliminar_elemento()">Click aqui</button>
-<script src="JS/main.js"></script>     
+     <script src="JS/main.js"></script>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="JS/script.js"></script>   
 </body>
 </html>

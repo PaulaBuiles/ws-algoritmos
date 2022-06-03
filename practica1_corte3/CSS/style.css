@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+body{
+    background-color: #eee;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+img{
+    width: 100%;
+}
+#navbar{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-sm{
+    display: block;
+}
+#navbar li{
+    float: left;
+}
+#navbar li a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: aliceblue;
+}
+#navbar li.active a{
+    color: red;
+}
+#navbar li a:hover{
+    background-color: coral;
+    color: black;
+}
+.myicono{
+    color: aliceblue;
+    font-size: 1.5em;
+    padding: 10px;
+    display: none;
+}
+#contenedor{ 
+    max-width: 1180px;
+    position: relative; 
+    top: 80px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+}
+
+#contenedor header{
+    height: 120px;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-radius: 1em;
+}
+
+#principal{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+#secundario{  
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+#contenedor aside{  
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+
+#contenedor footer{
+    clear: both;
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    height: 100px;
+    padding: 25px;
+
+}
+
+@media screen and (max-width: 820px){
+    #contenedor{
+        padding: 0;
+        max-width: 100%;
+    }
+    #contenedor header{
+        padding: 0;
+        border-radius: 0;
+    }
+    #principal{
+        padding: 3%;
+        width: 45%;
+    }
+    #secundario{
+        float: right;
+        padding: 3%;
+        width: 45%;
+    }
+    #contenedor aside{
+        clear: both;
+        padding: 5%;
+        width: 100%;
+    }
+    #contenedor footer{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    #contenedor{
+        max-width: auto;
+    }
+    #principal{
+        float: none;
+        margin: 0px;
+        width: auto;
+    }
+    #secundario{
+        float: none;
+        margin: 0px;
+        width: auto;
+    }
+    #contenedor aside{
+        padding: 0;
+        width: auto;
+    }
+    #contenedor footer{
+        width: auto;
+    }
+    .lista-sm{
+        display: none;
+    }
+    #navbar li{
+        float: none;
+        display: block;
+    }
+    #navbar li a{
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+    .myicono{
+        display: block;
+        text-align: right;
+    }
+}
+
+form{
+    max-width: 750px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+form div{
+    padding: 15px;
+}
+
+input{
+    width: 90%;
+    display: block;
+}
+button{
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+}
